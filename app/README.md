@@ -1,24 +1,17 @@
-# README
+# Desafio programação - para vaga desenvolvedor Ruby on Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Descrição do projeto
+Ler os dados de um [arquivo CNAB](https://github.com/ByCodersTec/desafio-ruby-on-rails/blob/master/CNAB.txt)
 
-Things you may want to cover:
+# Versões utilizadas
+* Ruby: 2.7.1
+* Rails: 6.0.3.2
 
-* Ruby version
+# Rodar o app em localHost
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Abrir o terminal
+> git clone git@github.com:vinnimartins/desafio-ruby-on-rails.git
+* Rodar o rails
+> rails s
+* Abrir o navegador
+> localhost:3000

@@ -1,0 +1,13 @@
+
+<%= render 'transactions/header' %>
+<div class="box">
+  <%= form_with(url: {action: :create}, multipart: true, id: 'create') do |f| %>
+    <%= file_field_tag 'archive', id: 'archive'%>
+    <label for="archive">
+    <br >
+    <br >
+    <br >
+
+    <%= f.submit "Enviar", id: 'send-file' %>
+  <% end %>
+</div>

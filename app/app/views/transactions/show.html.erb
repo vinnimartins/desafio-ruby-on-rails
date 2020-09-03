@@ -1,0 +1,28 @@
+
+<%= render 'transactions/header' %>
+<div class="content">
+<h2>Resumo de Transações</h2>
+</div>
+<% if @resume.empty? %>
+  <h2>Não existe registro disponível. Favor enviar arquivo.</h2>
+<% else %>
+  <table class="table">
+    <tr class="titles">
+      <th>Estabelecimento</th>
+      <th>Proprietário</th>
+      <th>Saldo</th>
+    </tr>
+    <% @resume.each do |t| %>
+      <tr>
+        <th><%= t.name %></th>
+        <th><%= t.owner %></th>
+        <th><%= sprintf('%.2f', t.balance) %></th>
+      </tr>
+    <% end %>
+    
+
+  
+  </table>
+  <% end %>
+
+  
